@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.recyclertask.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/MovieNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="75dp"
+            android:text="Movie Name :" />
+
+        <TextView
+            android:id="@+id/MovieRateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MovieNameTextView"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Movie Rate :" />
+
+        <TextView
+            android:id="@+id/MovieDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MovieRateTextView"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Movie Description  :" />
+
+        <EditText
+            android:id="@+id/MovieNameEditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="55dp"
+            android:layout_toRightOf="@id/MovieNameTextView" />
+
+        <EditText
+            android:id="@+id/MovieRateEditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/MovieNameEditText"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/MovieRateTextView" />
+
+        <EditText
+            android:id="@+id/MovieDescEditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/MovieRateEditText"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/MovieDescriptionTextView" />
+
+
+        <Button
+            android:id="@+id/ClickMe"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Add" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ClickMe"></android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
